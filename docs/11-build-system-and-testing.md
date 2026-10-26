@@ -1,6 +1,6 @@
 # 11. Build System & Testing
 
-Files: [`Makefile`](../betaflight/Makefile), [`mk/`](../betaflight/mk), [`src/config/`](../betaflight/src/config) (submodule), [`src/test/`](../betaflight/src/test).
+Files: [`Makefile`](https://github.com/betaflight/betaflight/blob/d593400a0/Makefile), [`mk/`](https://github.com/betaflight/betaflight/tree/d593400a0/mk), [`src/config/`](https://github.com/betaflight/config/tree/4961818ca9b6c463b4371e2e95f3e44da60b41a0) (submodule), [`src/test/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/test).
 
 ## Two build modes: `TARGET` and `CONFIG`
 
@@ -56,7 +56,7 @@ Bootloader/config-placement affects the linker: `EXST` pads the image and patche
 
 ## Unit tests
 
-Directory: [`src/test/unit/`](../betaflight/src/test/unit), framework: **GoogleTest** (vendored in `lib/test/gtest`, driven by `src/test/Makefile`):
+Directory: [`src/test/unit/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/test/unit), framework: **GoogleTest** (vendored in `lib/test/gtest`, driven by `src/test/Makefile`):
 
 ```bash
 make test   # in src/test/ — builds *_unittest.cc with a host compiler, XML output for CI
@@ -68,7 +68,7 @@ make test   # in src/test/ — builds *_unittest.cc with a host compiler, XML ou
 
 ## SITL (Software-In-The-Loop)
 
-Directory: [`src/platform/SIMULATOR/`](../betaflight/src/platform/SIMULATOR) + [`src/test/sitl/`](../betaflight/src/test/sitl).
+Directory: [`src/platform/SIMULATOR/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/platform/SIMULATOR) + [`src/test/sitl/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/test/sitl).
 
 ```bash
 make TARGET=SITL                      # obj/main/betaflight_SITL.elf

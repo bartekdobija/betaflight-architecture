@@ -1,6 +1,6 @@
 # 7. User Interfaces
 
-Files: [`src/main/osd/`](../betaflight/src/main/osd), [`src/main/cms/`](../betaflight/src/main/cms), [`src/main/cli/`](../betaflight/src/main/cli), [`src/main/io/vtx*.c`](../betaflight/src/main/io), [`src/main/io/ledstrip.c`](../betaflight/src/main/io/ledstrip.c), [`src/main/io/beeper.c`](../betaflight/src/main/io/beeper.c).
+Files: [`src/main/osd/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/main/osd), [`src/main/cms/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/main/cms), [`src/main/cli/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/main/cli), [`src/main/io/vtx*.c`](https://github.com/betaflight/betaflight/tree/d593400a0/src/main/io), [`src/main/io/ledstrip.c`](https://github.com/betaflight/betaflight/blob/d593400a0/src/main/io/ledstrip.c), [`src/main/io/beeper.c`](https://github.com/betaflight/betaflight/blob/d593400a0/src/main/io/beeper.c).
 
 ## 1. OSD + display ports
 

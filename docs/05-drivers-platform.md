@@ -1,6 +1,6 @@
 # 5. Drivers & Platform Abstraction
 
-Files: [`src/main/drivers/`](../betaflight/src/main/drivers) (~160 files), [`src/platform/`](../betaflight/src/platform) (9 families).
+Files: [`src/main/drivers/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/main/drivers) (~160 files), [`src/platform/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/platform) (9 families).
 
 ## The one rule
 

@@ -4,7 +4,7 @@
 
 This repository documents the internal architecture, design patterns, and engineering decisions behind Betaflight. The goal is to give programmers and contributors an accurate mental model of how the firmware is organized, how data flows through it, and where to change what.
 
-**All paths in this analysis are relative to [`betaflight/`](./betaflight) and reference the source tree at commit `d593400a0`.**
+**All paths in this analysis are relative to [`betaflight/`](https://github.com/betaflight/betaflight/tree/d593400a0) and reference the source tree at commit `d593400a0`.**
 
 ## Table of Contents
 
@@ -136,6 +136,16 @@ betaflight/
 │   ├── test/            # GoogleTest unit tests + SITL harness
 │   └── utils/           # Dev scripts
 ```
+
+## Contributing
+
+Help is welcome! If you find this analysis useful, spotted an error, or want to clarify a section — patches and improvements are appreciated:
+
+- **Typos, broken links, stale line references**: open an issue or just send a PR against this repo.
+- **Factual corrections**: this analysis pins a specific tree (`d593400a0`, calver `2026.12`); if the upstream code has moved, PRs that re-verify and update claims (with `file:line` evidence) are especially valuable.
+- **New content**: missing subsystems or better diagrams? Contributions welcome — keep the style: simple English, `file:line` references, Mermaid diagrams.
+
+The `docs/` pages are plain Markdown — edit and PR. For anything larger, please open an issue first to discuss the approach.
 
 ## License
 

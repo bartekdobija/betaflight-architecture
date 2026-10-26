@@ -1,6 +1,6 @@
 # 10. Navigation & Autopilot
 
-Files: [`src/main/flight/position_estimator.c`](../betaflight/src/main/flight/position_estimator.c), `position_filter.c`, `position_nav.c`, `autopilot_multirotor.c`, `autopilot_wing.c`, `gps_rescue_multirotor.c`, `gps_rescue_wing.c`, `pos_hold_multirotor.c`, `pos_hold_wing.c`, `alt_hold_multirotor.c`, `alt_hold_wing.c`, `launch_wing.c`, `landing_wing.c`, `flight_plan_nav.c`, `nav_trail.c`, `flight_plan_capture.c`.
+Files: [`src/main/flight/position_estimator.c`](https://github.com/betaflight/betaflight/blob/d593400a0/src/main/flight/position_estimator.c), `position_filter.c`, `position_nav.c`, `autopilot_multirotor.c`, `autopilot_wing.c`, `gps_rescue_multirotor.c`, `gps_rescue_wing.c`, `pos_hold_multirotor.c`, `pos_hold_wing.c`, `alt_hold_multirotor.c`, `alt_hold_wing.c`, `launch_wing.c`, `landing_wing.c`, `flight_plan_nav.c`, `nav_trail.c`, `flight_plan_capture.c`.
 
 Betaflight has real **navigation** (estimator + controller) on both multirotor and wing frames. The design principle: estimation and navigation are **frame-sharing layers** (shared `position_estimator`/`position_nav`), while **mode controllers** (pos hold, alt hold, GPS rescue, launch, landing) come in `_multirotor` / `_wing` pairs whose inner loops differ fundamentally (lateral velocity PID mapping to pitch/roll vs. L1 lateral acceleration → bank).
 

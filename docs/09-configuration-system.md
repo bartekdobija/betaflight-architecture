@@ -1,6 +1,6 @@
 # 9. Configuration System
 
-Files: [`src/main/pg/`](../betaflight/src/main/pg), [`src/main/config/`](../betaflight/src/main/config), [`src/main/cli/settings.c`](../betaflight/src/main/cli/settings.c).
+Files: [`src/main/pg/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/main/pg), [`src/main/config/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/main/config), [`src/main/cli/settings.c`](https://github.com/betaflight/betaflight/blob/d593400a0/src/main/cli/settings.c).
 
 Every persisted setting in Betaflight is a **Parameter Group (PG)**: a struct registered into a linker section at build time. EEPROM persistence, CLI dump, and MSP all operate on the same structs — there is no duplicated configuration model.
 
@@ -34,7 +34,7 @@ Key macros and their meanings:
 | `PG_REGISTER_ARRAY[_WITH_RESET_FN](type, count, name, pgn, version)` | per-instance array (profiles, serial ports, gyro devices…) |
 | `PG_DECLARE_ARRAY(_type, maxLength, name)` | array accessors `name(i)`/`nameMutable(i)` |
 
-PG IDs are a **hand-maintained registry** in [`pg/pg_ids.h`](../betaflight/src/main/pg/pg_ids.h): `PG_FAILSAFE_CONFIG 1`, `PG_MOTOR_CONFIG 6`, `PG_PID_PROFILE 14`, `PG_SYSTEM_CONFIG 18`, `PG_FEATURE_CONFIG 19`, `PG_RX_CONFIG 24`, … They are part of the **on-flash format contract** and are checked for uniqueness ordering by a unit test (`src/test/unit/check_pg_ids.awk` wired into `make test`).
+PG IDs are a **hand-maintained registry** in [`pg/pg_ids.h`](https://github.com/betaflight/betaflight/blob/d593400a0/src/main/pg/pg_ids.h): `PG_FAILSAFE_CONFIG 1`, `PG_MOTOR_CONFIG 6`, `PG_PID_PROFILE 14`, `PG_SYSTEM_CONFIG 18`, `PG_FEATURE_CONFIG 19`, `PG_RX_CONFIG 24`, … They are part of the **on-flash format contract** and are checked for uniqueness ordering by a unit test (`src/test/unit/check_pg_ids.awk` wired into `make test`).
 
 The **4-bit version** stored in the id's top bits drives migration: on EEPROM load, a PG whose stored version ≠ current is dropped to defaults rather than misread — this is how fields get added/removed safely without config breaks.
 

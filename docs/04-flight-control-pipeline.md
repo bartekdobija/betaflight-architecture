@@ -1,6 +1,6 @@
 # 4. Flight Control Pipeline
 
-Files: [`src/main/flight/`](../betaflight/src/main/flight) (PID, IMU, mixer, filters, failsafe, autopilot, navigation), [`src/main/sensors/`](../betaflight/src/main/sensors), glue in [`src/main/fc/core.c`](../betaflight/src/main/fc/core.c).
+Files: [`src/main/flight/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/main/flight) (PID, IMU, mixer, filters, failsafe, autopilot, navigation), [`src/main/sensors/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/main/sensors), glue in [`src/main/fc/core.c`](https://github.com/betaflight/betaflight/blob/d593400a0/src/main/fc/core.c).
 
 ## The complete data path
 

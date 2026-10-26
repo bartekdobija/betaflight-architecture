@@ -1,6 +1,6 @@
 # 1. Architecture Overview
 
-> Source tree analyzed: [betaflight/](../betaflight) at commit `d593400a0`, version `2026.12`.
+> Source tree analyzed: [betaflight/](https://github.com/betaflight/betaflight/tree/d593400a0) at commit `d593400a0`, version `2026.12`.
 
 Betaflight is a **bare-metal, single-tree C firmware** with no RTOS, no dynamic memory allocation, and no OS services. Its architecture can be described as four cooperating layers:
 
@@ -110,7 +110,7 @@ Every persisted setting lives in a **Parameter Group (PG)**: a struct registered
 
 ### 4. Portable core vs. per-MCU platform tree
 
-`src/main/` never includes a vendor SDK header. Peripheral handles are **opaque resource types** (`spiResource_t`, `dmaResource_t`, `timerResource_t`) and platform headers inject *compile-time traits* (`SPI_TRAIT_AF_PIN`, `DMA_TRAIT_CHANNEL`…). Each of the 9 platform families supplies the functions declared in `*_impl.h` contracts. Which implementations get compiled is decided by the per-MCU `.mk` source lists — not by `#ifdef` inside shared files. See [Drivers & Platform Abstraction](./05-drivers-platform.md) and [Build System & Testing](./10-build-system-and-testing.md).
+`src/main/` never includes a vendor SDK header. Peripheral handles are **opaque resource types** (`spiResource_t`, `dmaResource_t`, `timerResource_t`) and platform headers inject *compile-time traits* (`SPI_TRAIT_AF_PIN`, `DMA_TRAIT_CHANNEL`…). Each of the 9 platform families supplies the functions declared in `*_impl.h` contracts. Which implementations get compiled is decided by the per-MCU `.mk` source lists — not by `#ifdef` inside shared files. See [Drivers & Platform Abstraction](./05-drivers-platform.md) and [Build System & Testing](./11-build-system-and-testing.md).
 
 ## Request lifecycles worth knowing
 

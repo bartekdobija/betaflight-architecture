@@ -1,6 +1,6 @@
 # 3. Scheduler & Real-Time Loop
 
-Files: [`src/main/scheduler/scheduler.c`](../betaflight/src/main/scheduler/scheduler.c) (~850 LoC), [`src/main/fc/tasks.c`](../betaflight/src/main/fc/tasks.c), interplay in [`src/main/fc/core.c`](../betaflight/src/main/fc/core.c).
+Files: [`src/main/scheduler/scheduler.c`](https://github.com/betaflight/betaflight/blob/d593400a0/src/main/scheduler/scheduler.c) (~850 LoC), [`src/main/fc/tasks.c`](https://github.com/betaflight/betaflight/blob/d593400a0/src/main/fc/tasks.c), interplay in [`src/main/fc/core.c`](https://github.com/betaflight/betaflight/blob/d593400a0/src/main/fc/core.c).
 
 There is **no RTOS**. The whole firmware is a single cooperative scheduler whose periodic master clock is the **gyro data-ready interrupt**.
 

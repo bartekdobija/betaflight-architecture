@@ -1,6 +1,6 @@
 # 8. Blackbox & Storage
 
-Files: [`src/main/blackbox/`](../betaflight/src/main/blackbox), [`src/main/io/flashfs.c`](../betaflight/src/main/io/flashfs.c), [`src/main/io/asyncfatfs/`](../betaflight/src/main/io/asyncfatfs), [`src/main/msc/`](../betaflight/src/main/msc).
+Files: [`src/main/blackbox/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/main/blackbox), [`src/main/io/flashfs.c`](https://github.com/betaflight/betaflight/blob/d593400a0/src/main/io/flashfs.c), [`src/main/io/asyncfatfs/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/main/io/asyncfatfs), [`src/main/msc/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/main/msc).
 
 Blackbox runs **inside the PID loop** — `blackboxUpdate(currentTimeUs)` is called from `subTaskPidSubprocesses` (`fc/core.c:1479`), meaning logging content is written exactly in sync with the control loop with a per-loop byte budget (`blackboxHeaderBudget`, refilled from device free-space).
 

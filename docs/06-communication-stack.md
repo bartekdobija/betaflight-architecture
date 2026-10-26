@@ -1,6 +1,6 @@
 # 6. Communication Stack
 
-Files: [`src/main/rx/`](../betaflight/src/main/rx), [`src/main/telemetry/`](../betaflight/src/main/telemetry), [`src/main/msp/`](../betaflight/src/main/msp), [`src/main/io/gps.c`](../betaflight/src/main/io/gps.c), [`src/main/io/dronecan/`](../betaflight/src/main/io/dronecan).
+Files: [`src/main/rx/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/main/rx), [`src/main/telemetry/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/main/telemetry), [`src/main/msp/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/main/msp), [`src/main/io/gps.c`](https://github.com/betaflight/betaflight/blob/d593400a0/src/main/io/gps.c), [`src/main/io/dronecan/`](https://github.com/betaflight/betaflight/tree/d593400a0/src/main/io/dronecan).
 
 ## 1. RC input (`rx/`)
 

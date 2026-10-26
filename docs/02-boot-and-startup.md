@@ -1,6 +1,6 @@
 # 2. Boot & Startup
 
-Entry point: [`src/main/main.c:65`](../betaflight/src/main/main.c) → `main()`. The file is deliberately tiny: it wires up init phases and then hands over to an infinite scheduler loop.
+Entry point: [`src/main/main.c:65`](https://github.com/betaflight/betaflight/blob/d593400a0/src/main/main.c#L65) → `main()`. The file is deliberately tiny: it wires up init phases and then hands over to an infinite scheduler loop.
 
 ```mermaid
 flowchart TD
